@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Transitions and Transformations</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+
+    * { margin: 0; padding: 0; }
+
+    .object {
+      height: 200px;
+      width:200px;
+      background-color: red;
+      border: 5px solid black;
+      margin: 10px;
+      box-sizing: border-box;
+      opacity: 0;
+      transition: all 1s;
+    }
+
+    .circled {
+      background-color: blue;
+      border-radius: 50%;
+      border-width: 0;
+      margin-left: 300px;
+      opacity: 1;
+    }
+
+    .diamond {
+      border-radius:0;
+      background-color: yellow;
+      margin-top:200px;
+      transform: rotate(45deg);
+      opacity: 1;
+    }
+    button {padding: 10px;
+    border-radius: 3px;
+  }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="object"></div>
+    <button class="btn" title="Circlify">
+      </i>
+    </button>
+    <button id="diamond-btn" title= "Diamondize">
+    <i class="fa fa-pied-piper fa-x5"></button>
+
+    <script>
+      var button = document.querySelector(".btn");
+      var obj = document.querySelector(".object");
+
+        button.addEventListener("click", function() {
+        obj.className = "object circled";
+      })
+
+      var b2= document.getElementById("diamond-btn");
+      b2.addEventListener("click", function() {
+        var obj = document.querySelector(".object");
+        // obj class.Name = "object diamond";
+        obj.classList.remove("circled");
+        obj.classList.add("diamond");
+      })
+    </script>
+
+  </body>
+</html>
