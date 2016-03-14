@@ -1,0 +1,204 @@
+*
+{ margin: 0; padding: 0; box-sizing;}
+
+.container {
+    width: 80%;
+    margin: auto;
+  }
+
+  article {
+    border: 3px solid #67AAD2;
+    float: left;
+    width: 30%;
+    height: 400px;
+    min-width: 200px;
+    margin-top: 5%;
+    margin-left: 2.5%;
+    position:relative;
+    border-bottom: none;
+
+  }
+    .topRbox1 {
+      border: 3px solid #67AAD2;
+      float: right;
+      width: 40px;
+      height: 40px;
+      border-top: none;
+      border-right: none;
+      color: #67AAD2;
+      text-align: center;
+    }
+    .fa-undo {
+      margin-top: 7.5px;
+    }
+    .topRbox1:hover {
+      background-color: #67AAD2;
+      color: white;
+    }
+
+    .row1height {
+      height:80px;
+      margin-top: 317px;
+      border-bottom: 3px solid #67AAD2;
+    }
+    .b1sm1 {
+      border: none;
+      display: block;
+      background-color: white;
+      border-top: 3px solid #67AAD2;
+      float: left;
+      border-right:3px solid #67AAD2;
+      width: 20%;
+      height: 100%;
+      text-align: center;
+      color: #67AAD2;
+    }
+    .b1sm1:hover {
+      background-color: #67AAD2;
+      color: white;
+    }
+    .diffBorder {
+      border-right: none
+    }
+    .t-shirtsz {
+      opacity: 0;
+      border: 3px solid #67AAD2;
+      color: #67AAD2;
+      height: 180px;
+      width: 25%;
+      top:120px;
+      left: 37.5%;
+      position: absolute;
+      transition: transform 1s, opacity 1s;
+      background-color: white;
+    }
+    .t-shirtcol {
+      opacity: 0;
+      border: 3px solid #67AAD2;
+      height: 100px;
+      width: 25%;
+      top:200px;
+      left: 57.4%;
+      position: absolute;
+      transition: transform 1s, opacity 1s;
+      background-color: white;
+      list-style: none;
+    }
+    .iconHoverthingy {
+      font-size: 2em;
+
+    }
+    p {
+      font-family: Arial;
+    }
+    .colorbox {
+      background-color: #81BCE5;
+      border: 3px solid white;
+      height: 30px;
+      width: 8%;
+      top:315px;
+      left: 66%;
+      position: absolute;
+      margin-top: 25px;
+    }
+    .pink {
+      background-color:#D482AA;
+    }
+    .yellow {
+      background-color: #D8AD7A;
+    }
+    .tile1 {
+      background-color: #67AAD2;
+      height: 32px;
+      width: 35%;
+      top:11.5px;
+      left: 9.5%;
+      position: absolute;
+    }
+    .tile2 {
+      background-color: #D482AA;
+      height: 32px;
+      width: 35%;
+      top:11.5px;
+      left: 55.5%;
+      position: absolute;
+    }
+    .tile3 {
+      background-color: #D8AD7A;
+      height: 32px;
+      width: 35%;
+      top:50.5px;
+      left: 55.5%;
+      position: absolute;
+      }
+    .tile4 {
+        background-color: #8BB992;
+        height: 32px;
+        width: 35%;
+        top:50.5px;
+        left: 9.5%;
+        position: absolute;
+        }
+  #bluebox:hover + .t-shirtcol {
+      opacity: 1;
+      transform: translate3d(0px, 20px, 0px);
+    }
+  #XL:hover + .t-shirtsz {
+        opacity: 1;
+        transform: translate3d(0px, 20px, 0px);
+      }
+  #user li {
+    margin-bottom: 15%;
+    list-style: none;
+    text-align: center;
+    margin-left: 10%;
+   }
+   #blueshirt {
+     background-image: url("http://i.imgur.com/f4MDU7O.png");
+     background-repeat: no-repeat;
+     background-size: auto 65%;
+     background-position: center 35px;
+     min-width: inherit;
+   }
+   #pinkshirt {
+     background-image: url("http://i.imgur.com/g0RtIBk.png");
+     background-repeat: no-repeat;
+     background-size: auto 65%;
+     background-position: center 35px;
+     min-width: inherit;
+   }
+   #yellowshirt {
+     background-image: url("http://i.imgur.com/VLwmePn.png");
+     background-repeat: no-repeat;
+     background-size: auto 65%;
+     background-position: center 35px;
+     min-width: inherit;
+   }
+
+   #nubbin {
+    position: absolute;
+    background: #ffffff;
+    border: 3px solid #67aad2;
+   }
+   #nubbin:after, #nubbin:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+   }
+   #nubbin:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #ffffff;
+    border-width: 10px;
+    margin-left: -10px;
+   }
+   #nubbin:before {
+    border-color: rgba(103, 170, 210, 0);
+    border-top-color: #67aad2;
+    border-width: 14px;
+    margin-left: -14px;
+   }

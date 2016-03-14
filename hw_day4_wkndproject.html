@@ -1,312 +1,80 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tailored T-Shirts</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ <head>
+   <meta charset="utf-8">
+   <title>Tailored T-Shirts</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="hw_day4_wkndproject.css">
+ </head>
+ <body>
+   <article id="blueshirt">
+     <div class="topRbox1"><i class="fa fa-undo fa-lg fa-flip-vertical"></i></div>
+       <div class="row1height">
+         <button class="b1sm1"><i class="fa fa-refresh iconHoverthingy"></i></button>
+           <button class="b1sm1"><i class="fa fa-heart-o iconHoverthingy"></i></button>
+           <button class="b1sm1" id="XL"><p class="iconHoverthingy">XL</p></button>
+           <button class="t-shirtsz" id="nubbin"><ul id="user">
+                                   <li><i class="fa fa-user fa-4x"></i>
+                                   <li><i class="fa fa-user fa-3x"></i>
+                                   <li><i class="fa fa-user fa-2x"></i>
+                                   <li><i class="fa fa-user fa"></i>
+                                 </ul>
+                               </button>
+           <button class="b1sm1" id="bluebox"><div class="colorbox iconHoverthingy"></div></button>
+           <ul class="t-shirtcol" id="nubbin">
+             <li class="tile1"></li>
+             <li class="tile2"></li>
+             <li class="tile3"></li>
+             <li class="tile4"></li>
+           </ul>
+           <button class="b1sm1 diffBorder"><i class="fa fa-shopping-cart iconHoverthingy"></i></button>
+       </article>
 
-    <style>
+     <article id="pinkshirt">
+     <div class="topRbox1"><i class="fa fa-undo fa-lg fa-flip-vertical"></i></div>
+       <div class="row1height">
+         <button class="b1sm1"><i class="fa fa-refresh iconHoverthingy"></i></button>
+         <button class="b1sm1"><i class="fa fa-heart-o iconHoverthingy"></i></button>
+         <button class="b1sm1" id="XL"><p class="iconHoverthingy">XL</p></button>
+         <button class="t-shirtsz" id="nubbin"><ul id="user">
+                                 <li><i class="fa fa-user fa-4x"></i>
+                                 <li><i class="fa fa-user fa-3x"></i>
+                                 <li><i class="fa fa-user fa-2x"></i>
+                                 <li><i class="fa fa-user fa"></i>
+                               </ul>
+                             </button>
+         <button class="b1sm1" id="bluebox"><div class="colorbox iconHoverthingy pink"></div></button>
+         <ul class="t-shirtcol" id="nubbin">
+           <li class="tile1"></li>
+           <li class="tile2"></li>
+           <li class="tile3"></li>
+           <li class="tile4"></li>
+         </ul >
+           <button class="b1sm1 diffBorder"><i class="fa fa-shopping-cart iconHoverthingy"></i></button>
+       </article>
 
-    * { margin: 0; padding: 0; box-sizing: border-box;}
 
-    .container {
-        width: 80%;
-        margin: auto;
-
-      }
-    .box {
-
-        border: 3px solid #67AAD2;
-        float: left;
-        width: 30%;
-        height: 400px;
-        min-width: 200px;
-        margin-top: 5%;
-        margin-left: 2.5%;
-        position:relative;
-
-      }
-
-        .topRbox1 {
-          border: 3px solid #67AAD2;
-          float: right;
-          width: 40px;
-          height: 40px;
-          border-top: none;
-          border-right: none;
-          color: #67AAD2;
-          text-align: center;
-        }
-        .fa-undo {
-          margin-top: 7.5px;
-        }
-
-        .topRbox1:hover {
-          background-color: #67AAD2;
-          color: white;
-        }
-        .topRbox1:hover #blueshirt {
-         background-color: red;
-         background-image: url("http://i.imgur.com/nJyRZ0i.png");
-         background-repeat: no-repeat;
-         background-size: auto 65%;
-         background-position: center 35px;
-         min-width: inherit;
-       }
-
-        .row1height {
-          height:80px;
-          margin-top: 317px;
-        }
-
-        .b1sm1 {
-          border-top: 3px solid #67AAD2;
-          float: left;
-          border-right:3px solid #67AAD2;
-          width: 20%;
-          height: 100%;
-          text-align: center;
-          color: #67AAD2;
-        }
-        .b1sm1:hover {
-          background-color: #67AAD2;
-          color: white;
-
-        }
-        .diffBorder {
-          border-right: none
-        }
-        .t-shirtsz {
-          opacity: 0;
-          border: 3px solid #67AAD2;
-          color: #67AAD2;
-          height: 180px;
-          width: 25%;
-          top:120px;
-          left: 37.5%;
-          position: absolute;
-          transition: transform 1s, opacity 1s;
-          background-color: white;
-        }
-        .t-shirtcol {
-          opacity: 0;
-          border: 3px solid #67AAD2;
-          height: 100px;
-          width: 25%;
-          top:200px;
-          left: 57.4%;
-          position: absolute;
-          transition: transform 1s, opacity 1s;
-          background-color: white;
-        }
-
-        .iconHoverthingy {
-          font-size: 2em;
-          margin-top: 21px;
-        }
-        p {
-          font-family: Arial;
-        }
-        .colorbox {
-          background-color: #81BCE5;
-          border: 3px solid white;
-          height: 40px;
-          width: 10%;
-          top:315px;
-          left: 65%;
-          position: absolute;
-        }
-        .pink {
-          background-color:#D482AA;
-        }
-        .yellow {
-          background-color: #D8AD7A;
-        }
-
-        .tile1 {
-          background-color: #67AAD2;
-          height: 32px;
-          width: 35%;
-          top:11.5px;
-          left: 9.5%;
-          position: absolute;
-        }
-        .tile2 {
-          background-color: #D482AA;
-          height: 32px;
-          width: 35%;
-          top:11.5px;
-          left: 55.5%;
-          position: absolute;
-        }
-        .tile3 {
-          background-color: #D8AD7A;
-          height: 32px;
-          width: 35%;
-          top:50.5px;
-          left: 55.5%;
-          position: absolute;
-          }
-        .tile4 {
-            background-color: #8BB992;
-            height: 32px;
-            width: 35%;
-            top:50.5px;
-            left: 9.5%;
-            position: absolute;
-            }
-
-      #XL:hover + .t-shirtsz {
-            opacity: 1;
-            transform: translate3d(0px, 20px, 0px);
-          }
-      #user {
-        position: absolute;
-        list-style: none;
-        text-align: center;
-        margin-left: 26%;
-       }
-       #blueshirt {
-         background-image: url("http://i.imgur.com/f4MDU7O.png");
-         background-repeat: no-repeat;
-         background-size: auto 65%;
-         background-position: center 35px;
-         min-width: inherit;
-       }
-       #pinkshirt {
-         background-image: url("http://i.imgur.com/g0RtIBk.png");
-         background-repeat: no-repeat;
-         background-size: auto 65%;
-         background-position: center 35px;
-         min-width: inherit;
-       }
-       #yellowshirt {
-         background-image: url("http://i.imgur.com/VLwmePn.png");
-         background-repeat: no-repeat;
-         background-size: auto 65%;
-         background-position: center 35px;
-         min-width: inherit;
-       }
-       h2 {
-         margin-top:50px;
-         font-family: sans-serif;;
-         font-weight: lighter;
-         color: #67AAD2;
-
-       }
-
-       #nubbin {
-       	position: absolute;
-       	background: #ffffff;
-       	border: 3px solid #67aad2;
-       }
-       #nubbin:after, #nubbin:before {
-       	top: 100%;
-       	left: 50%;
-       	border: solid transparent;
-       	content: " ";
-       	height: 0;
-       	width: 0;
-       	position: absolute;
-       	pointer-events: none;
-       }
-
-       #nubbin:after {
-       	border-color: rgba(255, 255, 255, 0);
-       	border-top-color: #ffffff;
-       	border-width: 10px;
-       	margin-left: -10px;
-       }
-       #nubbin:before {
-       	border-color: rgba(103, 170, 210, 0);
-       	border-top-color: #67aad2;
-       	border-width: 14px;
-       	margin-left: -14px;
-       }
-
-    </style>
-  </head>
-  <body>
-    <div class"container">
-    <div class="box" id="blueshirt">
-      <div class="topRbox1"><i class="fa fa-undo fa-lg fa-flip-vertical"></i></div>
-        <div class="row1height">
-          <div class="b1sm1"><i class="fa fa-refresh iconHoverthingy"></i></div>
-            <div class="b1sm1"><i class="fa fa-heart-o iconHoverthingy"></i></div>
-            <div class="b1sm1" id="XL"><p class="iconHoverthingy">XL</p></div>
-            <div class="t-shirtsz" id="nubbin"><ul id="user">
-                                    <li><i class="fa fa-user fa-4x"></i>
-                                    <li><i class="fa fa-user fa-3x"></i>
-                                    <li><i class="fa fa-user fa-2x"></i>
-                                    <li><i class="fa fa-user fa"></i>
-                                  </ul>
-                                </div>
-            <div class="b1sm1" id="bluebox"><div class="colorbox iconHoverthingy"></div></div>
-            <div class="t-shirtcol" id="nubbin">
-              <div class="tile1"></div>
-              <div class="tile2"></div>
-              <div class="tile3"></div>
-              <div class="tile4"></div>
-            </div>
-            <div class="b1sm1 diffBorder"><i class="fa fa-shopping-cart iconHoverthingy"></i></div>
-        </div>
-        <h2> Save My Trees&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b>$29</b></h2>
-      </div>
-
-      <div class="box" id="pinkshirt">
-      <div class="topRbox1"><i class="fa fa-undo fa-lg fa-flip-vertical"></i></div>
-        <div class="row1height">
-          <div class="t-shirtsz" id="nubbin"></div>
-          <div class="b1sm1"><i class="fa fa-refresh iconHoverthingy"></i></div>
-          <div class="b1sm1"><i class="fa fa-heart-o iconHoverthingy"></i></div>
-          <div class="b1sm1" id="XL"><p class="iconHoverthingy">XL</p></div>
-          <div class="t-shirtsz" id="nubbin"><ul id="user">
-                                  <li><i class="fa fa-user fa-4x"></i>
-                                  <li><i class="fa fa-user fa-3x"></i>
-                                  <li><i class="fa fa-user fa-2x"></i>
-                                  <li><i class="fa fa-user fa"></i>
-                                </ul>
-                              </div>
-          <div class="b1sm1" id="bluebox"><div class="colorbox iconHoverthingy pink"></div></div>
-          <div class="t-shirtcol" id="nubbin">
-            <div class="tile1"></div>
-            <div class="tile2"></div>
-            <div class="tile3"></div>
-            <div class="tile4"></div>
-          </div>
-            <div class="b1sm1 diffBorder"><i class="fa fa-shopping-cart iconHoverthingy"></i></div>
-        </div>
-        <h2> Nature Lover&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>$19</b></h2>
-      </div>
-
-      <div class="box" id="yellowshirt">
-      <div class="topRbox1"><i class="fa fa-undo fa-lg fa-flip-vertical"></i></div>
-      <div class="row1height">
-          <div class="b1sm1"><i class="fa fa-refresh iconHoverthingy"></i></div>
-          <div class="b1sm1"><i class="fa fa-heart-o iconHoverthingy"></i></div>
-          <div class="b1sm1" id="XL"><p class="iconHoverthingy">XL</p></div>
-          <div class="t-shirtsz" id="nubbin"><ul id="user">
-                                  <li><i class="fa fa-user fa-4x"></i>
-                                  <li><i class="fa fa-user fa-3x"></i>
-                                  <li><i class="fa fa-user fa-2x"></i>
-                                  <li><i class="fa fa-user fa"></i>
-                                </ul>
-                              </div>
-          <div class="b1sm1" id="bluebox"><div class="colorbox iconHoverthingy yellow"></div></div>
-          <div class="t-shirtcol" id="nubbin">
-            <div class="tile1"></div>
-            <div class="tile2"></div>
-            <div class="tile3"></div>
-            <div class="tile4"></div>
-          </div>
-          <div class="b1sm1 diffBorder"><i class="fa fa-shopping-cart iconHoverthingy"></i></div>
-        </div>
-        <h2> Forrest Walk&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>$39</b></h2>
-      </div>
-</div>
-
-  </body>
+     <article id="yellowshirt">
+     <div class="topRbox1"><i class="fa fa-undo fa-lg fa-flip-vertical"></i></div>
+     <div class="row1height">
+         <button class="b1sm1"><i class="fa fa-refresh iconHoverthingy"></i></button>
+         <button class="b1sm1"><i class="fa fa-heart-o iconHoverthingy"></i></button>
+         <button class="b1sm1" id="XL"><p class="iconHoverthingy">XL</p></button>
+         <button class="t-shirtsz" id="nubbin"><ul id="user">
+                                 <li><i class="fa fa-user fa-4x"></i>
+                                 <li><i class="fa fa-user fa-3x"></i>
+                                 <li><i class="fa fa-user fa-2x"></i>
+                                 <li><i class="fa fa-user fa"></i>
+                               </ul>
+                             </button>
+         <button class="b1sm1" id="bluebox"><div class="colorbox iconHoverthingy yellow"></div></button>
+         <ul class="t-shirtcol" id="nubbin">
+           <li class="tile1"></li>
+           <li class="tile2"></li>
+           <li class="tile3"></li>
+           <li class="tile4"></li>
+         </ul>
+         <button class="b1sm1 diffBorder"><i class="fa fa-shopping-cart iconHoverthingy"></i></button>
+       </article>
+     </body>
 </html>
